@@ -278,7 +278,7 @@
                       <button
                         id="defaultModalButton"
                         data-modal-toggle="defaultModal"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                        class="block px-4 w-full py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Create New Project
                       </button>
@@ -384,161 +384,347 @@
     </header>
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <!-- Welcome -->
         <div
           class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8"
         >
           <h2
             class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
           >
-            Our Blog
+            Welcome! <span class="changeName">Fiza Ahmad</span>
           </h2>
           <p
             class="font-light text-gray-500 sm:text-xl dark:text-gray-400"
           >
-            We use an agile approach to test assumptions and connect
-            with the needs of your audience early and often.
+            You can manage your work here.
           </p>
         </div>
-        <div class="grid gap-8 lg:grid-cols-2">
-          <article
-            class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+
+        <!-- Recent Projects  -->
+        <div class="bg-gray-100 rounded-lg p-4 dark:bg-gray-800">
+          <div
+            class="flex border-b border-b-gray-400/50 py-3 items-center justify-between"
           >
-            <div
-              class="flex justify-between items-center mb-5 text-gray-500"
-            >
-              <span
-                class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
-              >
-                <svg
-                  class="mr-1 w-3 h-3"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
-                  ></path>
-                </svg>
-                Tutorial
-              </span>
-              <span class="text-sm">14 days ago</span>
-            </div>
-            <h2
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              <a href="#">How to quickly deploy a static website</a>
+            <h2 class="text-gray-900 text-xl dark:text-white">
+              Recent Projects
             </h2>
-            <p
-              class="mb-5 font-light text-gray-500 dark:text-gray-400"
+            <a
+              href=""
+              class="text-gray-900 dark:text-gray-400 text-xs underline underline-offset-2 decoration decoration-primary-700"
             >
-              Static websites are now used to bootstrap lots of
-              websites and are becoming the basis for a variety of
-              tools that even influence both web designers and
-              developers influence both web designers and developers.
-            </p>
-            <div class="flex justify-between items-center">
-              <div class="flex items-center space-x-4">
-                <img
-                  class="w-7 h-7 rounded-full"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
-                  alt="Jese Leos avatar"
-                />
-                <span class="font-medium dark:text-white">
-                  Jese Leos
-                </span>
+              View all Projects
+            </a>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4 my-6 lg:grid-col-4">
+            <!-- Project 1 Quantum -->
+            <div class="bg-gray-200 rounded-lg dark:bg-gray-700">
+              <div
+                class="flex flex-col justify-between h-full gap-3 p-4"
+              >
+                <div class="space-y-3">
+                  <!-- Avatar & Project Name & Nubmer -->
+                  <div class="flex gap-3 items-center">
+                    <img
+                      src="https://media.istockphoto.com/id/1295530671/vector/atom-doodle.jpg?s=612x612&w=0&k=20&c=QXuYR7iLRFZH63Szh45ZtD3bC2Fv3ncYHvHxo3C8658="
+                      class="w-8 rounded-full h-8 object-center object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="flex items-center justify-between w-full"
+                    >
+                      <p
+                        class="text-gray-900 dark:text-white text-lg"
+                      >
+                        QuantumXplorer
+                      </p>
+                      <p
+                        class="text-gray-600 text-xs dark:text-gray-400"
+                      >
+                        1
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Description -->
+                  <p class="text-sm text-gray-700 dark:text-gray-300">
+                    QuantumXplorer is an innovative project aimed at
+                    developing a user-friendly platform that allows
+                    individuals to explore and experiment with the
+                    fascinating world of quantum computing.
+                  </p>
+                  <!-- Team Leader Id & Project Key -->
+                  <div
+                    class="flex items-center justify-between w-full"
+                  >
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Team Leader Id: 2356
+                    </p>
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Key: QX
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Manage -->
+                <div
+                  class="flex justify-end w-full pt-2 border-t border-t-gray-400/50"
+                >
+                  <a
+                    href="#!"
+                    class="flex items-center text-sm text-gray-900 dark:text-primary-400"
+                  >
+                    <p class="">Manage</p>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <a
-                href="#"
-                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-              >
-                Read more
-                <svg
-                  class="ml-2 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
             </div>
-          </article>
-          <article
-            class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
-          >
-            <div
-              class="flex justify-between items-center mb-5 text-gray-500"
-            >
-              <span
-                class="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800"
+
+            <!-- Project 2 EcoTrack -->
+            <div class="bg-gray-200 rounded-lg dark:bg-gray-700">
+              <div
+                class="flex flex-col gap-3 justify-between h-full p-4"
               >
-                <svg
-                  class="mr-1 w-3 h-3"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div class="space-y-3">
+                  <!-- Avatar & Project Name & Nubmer -->
+                  <div class="flex gap-3 items-center">
+                    <img
+                      src="https://e7.pngegg.com/pngimages/567/563/png-clipart-map-gps-navigation-device-icon-positioned-elements-service-cartoon.png"
+                      class="w-8 rounded-full h-8 object-center object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="flex items-center justify-between w-full"
+                    >
+                      <p
+                        class="text-gray-900 dark:text-white text-lg"
+                      >
+                        EcoTrack
+                      </p>
+                      <p
+                        class="text-gray-600 text-xs dark:text-gray-400"
+                      >
+                        2
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Description -->
+                  <p class="text-sm text-gray-700 dark:text-gray-300">
+                    EcoTrack is a sustainability-focused project
+                    designed to empower individuals and businesses to
+                    track, analyze, and reduce their environmental
+                    footprint.
+                  </p>
+                  <!-- Team Leader Id & Project Key -->
+                  <div
+                    class="flex items-center justify-between w-full"
+                  >
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Team Leader Id: 5632
+                    </p>
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Key: ET
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Manage -->
+                <div
+                  class="flex justify-end w-full pt-2 border-t border-t-gray-400/50"
                 >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                  <path
-                    d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"
-                  ></path>
-                </svg>
-                Article
-              </span>
-              <span class="text-sm">14 days ago</span>
-            </div>
-            <h2
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
-            >
-              <a href="#">Our first project with React</a>
-            </h2>
-            <p
-              class="mb-5 font-light text-gray-500 dark:text-gray-400"
-            >
-              Static websites are now used to bootstrap lots of
-              websites and are becoming the basis for a variety of
-              tools that even influence both web designers and
-              developers influence both web designers and developers.
-            </p>
-            <div class="flex justify-between items-center">
-              <div class="flex items-center space-x-4">
-                <img
-                  class="w-7 h-7 rounded-full"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                  alt="Bonnie Green avatar"
-                />
-                <span class="font-medium dark:text-white">
-                  Bonnie Green
-                </span>
+                  <a
+                    href="#!"
+                    class="flex items-center text-sm text-gray-900 dark:text-primary-400"
+                  >
+                    <p class="">Manage</p>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <a
-                href="#"
-                class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-              >
-                Read more
-                <svg
-                  class="ml-2 w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </a>
             </div>
-          </article>
+
+            <!-- Project 3 VirtualFit -->
+            <div class="bg-gray-200 rounded-lg dark:bg-gray-700">
+              <div
+                class="flex flex-col gap-3 justify-between h-full p-4"
+              >
+                <div class="space-y-3">
+                  <!-- Avatar & Project Name & Nubmer -->
+                  <div class="flex gap-3 items-center">
+                    <img
+                      src="https://play-lh.googleusercontent.com/Unydwqk0CAmkpKS8fOaLaLPopnJuXosz6kWHlvXfy6Lmj3tpRH6DopjPj95T4vCat_I"
+                      class="w-8 rounded-full h-8 object-center object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="flex items-center justify-between w-full"
+                    >
+                      <p
+                        class="text-gray-900 dark:text-white text-lg"
+                      >
+                        VirtualFit
+                      </p>
+                      <p
+                        class="text-gray-600 text-xs dark:text-gray-400"
+                      >
+                        3
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Description -->
+                  <p class="text-sm text-gray-700 dark:text-gray-300">
+                    VirtualFit is a virtual reality fitness project
+                    that revolutionizes traditional workout
+                    experiences. Combining immersive VR technology
+                    with personalized training programs.
+                  </p>
+                  <!-- Team Leader Id & Project Key -->
+                  <div
+                    class="flex items-center justify-between w-full"
+                  >
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Team Leader Id: 1263
+                    </p>
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Key: VF
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Manage -->
+                <div
+                  class="flex justify-end w-full pt-2 border-t border-t-gray-400/50"
+                >
+                  <a
+                    href="#!"
+                    class="flex items-center text-sm text-gray-900 dark:text-primary-400"
+                  >
+                    <p class="">Manage</p>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 MindScribe -->
+            <div class="bg-gray-200 rounded-lg dark:bg-gray-700">
+              <div
+                class="flex flex-col gap-3 justify-between h-full p-4"
+              >
+                <div class="space-y-3">
+                  <!-- Avatar & Project Name & Nubmer -->
+                  <div class="flex gap-3 items-center">
+                    <img
+                      src="https://www.acrolinx.com/wp-content/uploads/2018/12/acrolinx-blog-1141771061.jpg"
+                      class="w-8 rounded-full h-8 object-center object-cover"
+                      alt=""
+                    />
+                    <div
+                      class="flex items-center justify-between w-full"
+                    >
+                      <p
+                        class="text-gray-900 dark:text-white text-lg"
+                      >
+                        MindScribe
+                      </p>
+                      <p
+                        class="text-gray-600 text-xs dark:text-gray-400"
+                      >
+                        4
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Description -->
+                  <p class="text-sm text-gray-700 dark:text-gray-300">
+                    MindScribe is an AI-powered project centered
+                    around mental wellness and self-reflection. It
+                    provides a digital platform where users can keep a
+                    personal journal and receive insightful prompts
+                    and reflections based on their entries.
+                  </p>
+                  <!-- Team Leader Id & Project Key -->
+                  <div
+                    class="flex items-center justify-between w-full"
+                  >
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Team Leader Id: 1263
+                    </p>
+                    <p
+                      class="text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      Key: VF
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Manage -->
+                <div
+                  class="flex justify-end w-full pt-2 border-t border-t-gray-400/50"
+                >
+                  <a
+                    href="#!"
+                    class="flex items-center text-sm text-gray-900 dark:text-primary-400"
+                  >
+                    <p class="">Manage</p>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
