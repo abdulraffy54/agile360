@@ -176,12 +176,28 @@
               ><p class="text-sm text-gray-600">
                 Role<span class="pl-1 text-red-600">*</span>
               </p>
-              <input
-                required
-                id="Role"
-                type="text"
+              <select
                 class="rounded-md px-2 py-1 text-sm text-green-800 placeholder:text-xs placeholder:text-gray-400 focus:border-none focus:outline-none"
-            /></label>
+                name="issue-select"
+                id="issue"
+              >
+                <option class="text-green-800" value="">
+                  Choose your Role
+                </option>
+                <option class="text-green-800" value="administrator">
+                  Administrator
+                </option>
+                <option class="text-green-800" value="projectManager">
+                  Project Manager
+                </option>
+                <option class="text-green-800" value="developer">
+                  Developer
+                </option>
+                <option class="text-green-800" value="customer">
+                  Customer
+                </option>
+              </select></label
+            >
           </div>
 
           <!-- Submit Button   -->
